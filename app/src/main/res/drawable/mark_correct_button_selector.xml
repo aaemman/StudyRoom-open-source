@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/unmarked_correct_up_background" android:state_enabled="true" android:state_window_focused="false"/>
+    <item android:drawable="@drawable/marked_correct_up_background" android:state_enabled="false" android:state_window_focused="false"/>
+    <item android:drawable="@drawable/unmarked_correct_down_background" android:state_pressed="true"/>
+    <item android:drawable="@drawable/unmarked_correct_down_background" android:state_enabled="true" android:state_focused="true"/>
+    <item android:drawable="@drawable/unmarked_correct_up_background" android:state_enabled="true"/>
+    <item android:drawable="@drawable/unmarked_correct_up_background" android:state_focused="true"/>
+    <item android:drawable="@drawable/unmarked_correct_up_background"/>
+
+</selector>

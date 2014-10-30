@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">StudyRoom_Beta</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_mainFeed">Feed</string>
+    <string name="action_enrollCourse">enroll</string>
+    <string name="action_postQuestion">postQ</string>
+    <string name="question">Description</string>
+    <string name="title">Question</string>
+    <string name="class_name">Class</string>
+    <string name="post">Post</string>
+    <string name="button_send">Act</string>
+    <string name="title_activity_enroll_class">My Courses</string>
+    <string name="title_activity_mainfeed">Question Feed</string>
+    <string name="title_activity_post_question">Post Question</string>
+    <string name="title_activity_my_questions">My Questions</string>
+    <string name="title_activity_my_answers">My Answers</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="title_activity_signin">Sign In</string>
+    <string name="title_activity_signup">Sign Up</string>
+    <string name="title_activity_answer">Answer Page</string>
+    <string name="title_activity_leaderboards">LeaderBoards</string>
+    <string name="button_addToLV">Add Random</string>
+    <string name="spinner_head">Filter</string>
+    <string name="questionsURL">http://warm-inlet-5993.herokuapp.com/api/v1/questions</string>
+    <string name="answersURL">http://warm-inlet-5993.herokuapp.com/api/v1/answers</string>
+    <string name="myQuestionsURL">http://warm-inlet-5993.herokuapp.com/api/v1/my_questions</string>
+    <string name="classesURL">http://warm-inlet-5993.herokuapp.com/api/v1/class_relationships</string>
+    <string name="signupURL">http://warm-inlet-5993.herokuapp.com/api/v1/users</string>
+    <string name="signinURL">http://warm-inlet-5993.herokuapp.com/api/v1/sessions</string>
+    <string name="usersURL">http://warm-inlet-5993.herokuapp.com/api/v1/users</string>
+    <string name="voteURL">http://warm-inlet-5993.herokuapp.com/api/v1/point_transactions</string>
+    <string name="leaderboardsURL">http://warm-inlet-5993.herokuapp.com/api/v1/leaderboard_entries</string>
+    <string name="reportURL">http://warm-inlet-5993.herokuapp.com/api/v1/reports</string>
+    <string name="Authorization">93bc9caf5ccae52a77b4834776136862</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="NavDrawerTitle">StudyRoom BETA</string>
+    <string name="commentURL">http://warm-inlet-5993.herokuapp.com/api/v1/post_comments</string>
+	<!-- 134.117.53.93 -->
+
+    <string-array name="activity_array">
+        <item>Questions Feed</item>
+        <item>My Questions</item>
+        <item>My Answers</item>
+        <item>Profile</item>
+        <item>Sign Out</item>
+    </string-array>
+
+</resources>

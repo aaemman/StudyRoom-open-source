@@ -1,0 +1,38 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Activity Content Padding -->
+    <dimen name="activity_content_left_padding">16dp</dimen>
+    <dimen name="activity_content_right_padding">16dp</dimen>
+    <dimen name="activity_content_bottom_padding">16dp</dimen>
+    <dimen name="activity_content_top_padding">16dp</dimen>
+    <dimen name="activity_content_vertical_separator_margin">5dp</dimen>
+    <dimen name="signin_activity_content_segment_separator">50dp</dimen>
+
+    <!-- TextBox Content padding -->
+    <dimen name="study_room_standard_large_buffer">16dp</dimen>
+
+    <!-- Profile Page -->
+
+    <dimen name="profileStatBoxVerticalSeparator">10dp</dimen>
+    <dimen name="profileStatBoxFooterSeparator">20dp</dimen>
+    <dimen name="ProfilePageButonMargin">5dp</dimen>
+    <dimen name="profilePageButtonDrawablePadding">5dp</dimen>
+    <dimen name="profilePageButtonTextBottomPadding">10dp</dimen>
+    
+    <dimen name="comment_row_date_author_seperator">10dp</dimen>
+    <dimen name="study_room_standard_buffer">8dp</dimen>
+    <dimen name="edit_text_standard_height">40dp</dimen>
+    <dimen name="study_room_body_text_size">14sp</dimen>
+    <dimen name="button_bar_top_separator">25dp</dimen>
+    <dimen name="button_bar_height">45dp</dimen>
+    <dimen name="study_room_button_corner_radius">5dp</dimen>
+
+
+
+    <dimen name="study_room_button_underline_height">5dp</dimen>
+
+</resources>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/rlSignInParent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signin_background"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/llSignInInputs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_content_left_padding"
+        android:layout_marginRight="@dimen/activity_content_right_padding"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivSignInLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/signin_activity_content_segment_separator"
+            android:background="@drawable/sign_in_logo"
+            android:scaleType="fitXY"/>
+
+        <RelativeLayout
+            android:id="@+id/llUsername"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_text_standard_height"
+            android:layout_marginBottom="@dimen/activity_content_bottom_padding"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ivSignInUsernameBackground"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_background"/>
+
+            <EditText
+                style="@style/StudyRoom.EditText"
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="false"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="@dimen/activity_content_left_padding"
+                android:paddingRight="@dimen/activity_content_right_padding"
+                android:singleLine="true"
+                android:textSize="@dimen/study_room_body_text_size">
+
+                <requestFocus/>
+            </EditText>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlPassword"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_text_standard_height"
+            android:layout_marginBottom="@dimen/activity_content_bottom_padding"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/ivSignInPasswordBackground"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_background"/>
+
+            <EditText
+                style="@style/StudyRoom.EditText"
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingLeft="@dimen/activity_content_left_padding"
+                android:paddingRight="@dimen/activity_content_right_padding"
+                android:singleLine="true">
+
+            </EditText>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llSignInButtons"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_bar_height"
+            android:layout_marginTop="@dimen/button_bar_top_separator"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <Button
+                android:id="@+id/bSignUp"
+                style="@style/StudyRoom.GreyButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="47.5"
+                android:background="@drawable/grey_button_selector"
+                android:gravity="center"
+                android:onClick="signUp"
+                android:text="Sign Up"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="5"/>
+
+            <Button
+                android:id="@+id/bSignIn"
+                style="@style/StudyRoom.PurpleButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="47.5"
+                android:gravity="center"
+                android:onClick="signIn"
+                android:text="Sign In"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- the theme applied to the application or activity -->
+    <style name="CustomActionBarTheme" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="android:actionBarTabTextStyle">@style/MyActionBarTabText</item>
+        <item name="android:actionMenuTextColor">@color/actionbar_text</item>
+    </style>
+
+    <!-- ActionBar styles -->
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:titleTextStyle">@style/MyActionBarTitleText</item>
+        <item name="android:background">@color/studyroom_purple</item>
+        <item name="android:icon">@drawable/actionbar_app_icon</item>
+    </style>
+
+    <!-- ActionBar title text -->
+    <style name="MyActionBarTitleText" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/actionbar_text</item>
+    </style>
+
+    <!-- ActionBar tabs text styles -->
+    <style name="MyActionBarTabText" parent="@android:style/Widget.Holo.ActionBar.TabText">
+        <item name="android:textColor">@color/actionbar_text</item>
+    </style>
+
+    <!-- Button Styles -->
+
+    <style name="StudyRoom.PurpleButton" parent="@android:style/Widget.Button">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/purple_button_selector</item>
+        <item name="android:textSize">@dimen/button_text_size</item>
+    </style>
+
+    <style name="StudyRoom.EnrollButton" parent="@android:style/Widget.Button">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:background">@drawable/enroll_button_selector</item>
+    </style>
+
+    <style name="StudyRoom.LargeSquarePurpleButton" parent="@android:style/Widget.Button">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:background">@drawable/large_square_purple_button_selector</item>
+    </style>
+
+    <style name="StudyRoom.GreyButton" parent="@android:style/Widget.Button">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingBottom">@dimen/study_room_button_underline_height</item>
+        <item name="android:background">@drawable/grey_button_selector</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="StudyRoom.VoteUpButton" parent="@android:style/Widget.Button">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:background">@drawable/vote_up_button_selector</item>
+    </style>
+
+    <style name="StudyRoom.VoteDownButton" parent="@android:style/Widget.Button">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:background">@drawable/vote_down_button_selector</item>
+    </style>
+    
+     <style name="StudyRoom.DetailsButton" parent="@android:style/Widget.Button">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:background">@drawable/details_button_selector</item>
+        <item name="android:alpha">120</item>
+    </style>
+    <style name="StudyRoom.MarkCorrectButton" parent="@android:style/Widget.Button">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:background">@drawable/mark_correct_button_selector</item>
+    </style>
+
+    <!-- EDIT TEXT STYLES -->
+
+    <style name="StudyRoom.EditText" parent="android:Widget.EditText">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/study_room_body_text_size</item>
+
+    </style>
+
+    <dimen name="button_text_size">15sp</dimen>
+</resources>

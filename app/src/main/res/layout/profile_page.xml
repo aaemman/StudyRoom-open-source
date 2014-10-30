@@ -1,0 +1,346 @@
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/profileStatBoxFooterSeparator"
+                android:layout_marginLeft="@dimen/activity_content_left_padding"
+                android:layout_marginRight="@dimen/activity_content_right_padding"
+                android:layout_marginTop="@dimen/profileStatBoxFooterSeparator"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvProfilePageUserName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:gravity="center"
+                        android:text="Loading..."
+                        android:textColor="@color/studyroom_purple"
+                        android:textSize="30sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/tvProfilePageUserJoinDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/studyroom_dark_purple"
+                        android:textSize="12sp"
+                        android:textStyle="italic"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/profileStatBoxVerticalSeparator"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="10"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="37.5"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvProfilePageTotalPointsCountValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="..."
+                            android:textColor="@color/studyroom_purple"
+                            android:textSize="30sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/tvProfilePageTotalPointsCountTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:singleLine="false"
+                            android:text="Total Points"
+                            android:textColor="@color/studyroom_dark_purple"
+                            android:textSize="20sp"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="5"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="37.5"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvProfilePageQuestionsPostedCountValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="..."
+                            android:textColor="@color/studyroom_purple"
+                            android:textSize="30sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/tvProfilePageQuestionsPostedCountTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Questions"
+                            android:textColor="@color/studyroom_dark_purple"
+                            android:textSize="20sp"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="10"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/profileStatBoxVerticalSeparator"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="10"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="37.5"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvProfilePageAnswersPostedCountValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="..."
+                            android:textColor="@color/studyroom_purple"
+                            android:textSize="30sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/tvProfilePageAnswersPostedCountTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Answers"
+                            android:textColor="@color/studyroom_dark_purple"
+                            android:textSize="20sp"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="5"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="37.5"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvProfilePageCorrectAnswersCountValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="..."
+                            android:textColor="@color/studyroom_purple"
+                            android:textSize="30sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/tvProfilePageCorrectAnswersCountTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="Correct Answers"
+                            android:textColor="@color/studyroom_dark_purple"
+                            android:textSize="20sp"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="10"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/profileStatBoxFooterSeparator"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="10"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="80"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvProfilePagePercentCorrectAnswersCountValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="..."
+                            android:textColor="@color/studyroom_purple"
+                            android:textSize="30sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/tvProfilePagePercentCorrectAnswersCountTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:singleLine="false"
+                            android:text="% Correct Answers"
+                            android:textColor="@color/studyroom_dark_purple"
+                            android:textSize="20sp"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="10"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <Button
+                android:id="@+id/ProfilePageLeaderboardsButton"
+                style="@style/StudyRoom.LargeSquarePurpleButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/ProfilePageButonMargin"
+                android:layout_weight="33"
+                android:drawablePadding="@dimen/profilePageButtonDrawablePadding"
+                android:drawableTop="@drawable/leaderboards_icon"
+                android:onClick="leaderBoardsButton"
+                android:paddingBottom="@dimen/profilePageButtonTextBottomPadding"
+                android:text="Leaderboards"/>
+
+            <Button
+                android:id="@+id/ProfilePageBadgesButton"
+                style="@style/StudyRoom.LargeSquarePurpleButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/ProfilePageButonMargin"
+                android:layout_weight="33"
+                android:drawablePadding="@dimen/profilePageButtonDrawablePadding"
+                android:drawableTop="@drawable/badges_icon"
+                android:onClick="badgesButtonOnClick"
+                android:paddingBottom="@dimen/profilePageButtonTextBottomPadding"
+                android:text="Badges"/>
+
+            <Button
+                android:id="@+id/ProfilePageClassesButton"
+                style="@style/StudyRoom.LargeSquarePurpleButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/ProfilePageButonMargin"
+                android:layout_weight="33"
+                android:drawablePadding="@dimen/profilePageButtonDrawablePadding"
+                android:drawableTop="@drawable/classes_icon"
+                android:onClick="classesButton"
+                android:paddingBottom="@dimen/profilePageButtonTextBottomPadding"
+                android:text="Classes"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/left_drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/drawer_background_color"
+        android:choiceMode="singleChoice"
+        android:divider="@color/drawer_divider_color"
+        android:dividerHeight="1dp"
+        android:paddingLeft="15sp"
+        android:paddingRight="15sp"/>
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:weightSum="100" >
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="30" >
+
+        <RelativeLayout
+            android:id="@+id/rlQuestionFeedRowPoints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/tvQuestionFeedRowPointsBackground"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/question_points_background"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/tvQuestionFeedRowPointsValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:textSize="20dp" >
+            </TextView>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvQuestionFeedRowClassName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rlQuestionFeedRowPoints"
+            android:layout_centerHorizontal="true"
+            android:text="SYSC4504"
+            android:textSize="10sp"
+            android:textStyle="bold" >
+        </TextView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="60"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:maxEms="9"
+                android:singleLine="false"
+                android:text="JarredSzabadi"
+                android:textSize="15sp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvQuestionFeedRowDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:singleLine="true"
+                android:text="22:10 Dec. 19th 2013"
+                android:textColor="#A4A4A4"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question 1"
+            android:textColor="#848484"
+            android:textSize="25sp"
+            android:textStyle="italic" >
+        </TextView>
+    </LinearLayout>
+
+</LinearLayout>

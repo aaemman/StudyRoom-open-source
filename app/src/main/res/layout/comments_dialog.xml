@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlCommentsModal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/lvCommentsList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="@color/studyroom_dark_purple"
+            android:dividerHeight="2dp"
+            android:drawSelectorOnTop="false" >
+        </ListView>
+
+        <TextView
+            android:id="@+id/tvCommentsModalNoComments"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/lvCommentsList"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="No Comments"
+            android:textColor="@color/light_grey"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llCommentsModalWriteComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_content_left_padding"
+            android:layout_marginRight="@dimen/activity_content_right_padding"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <EditText
+                android:id="@+id/etCommentsModalPost"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="75"
+                android:background="@android:color/transparent"
+                android:hint="Write a comment"
+                android:textSize="15sp" />
+
+            <Button
+                style="@style/StudyRoom.EnrollButton"
+                android:id="@+id/bCommentsModalPost"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="25"
+                android:text="Post"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/llCommentsModalWriteComment"
+        android:background="@color/light_grey" />
+
+</RelativeLayout>

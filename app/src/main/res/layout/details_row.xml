@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tvDetailRowDescription"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="left"
+    android:paddingBottom="@dimen/activity_content_bottom_padding"
+    android:paddingLeft="@dimen/activity_content_left_padding"
+    android:paddingRight="@dimen/activity_content_right_padding"
+    android:paddingTop="@dimen/activity_content_top_padding"
+    android:text="..."
+    android:textSize="15dp" >
+
+</TextView>

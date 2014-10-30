@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/activity_content_left_padding"
+    android:layout_marginRight="@dimen/activity_content_right_padding"
+    android:orientation="vertical"
+    android:weightSum="100" >
+
+    <Spinner
+        android:id="@+id/class_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/activity_content_bottom_padding"
+        android:layout_marginTop="@dimen/activity_content_top_padding"
+        android:layout_weight="10" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/activity_content_bottom_padding"
+        android:layout_weight="10"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/ivTitleBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edit_text_background" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingLeft="@dimen/activity_content_left_padding"
+            android:paddingRight="@dimen/activity_content_right_padding"
+            android:weightSum="100" >
+
+            <EditText
+                style="@style/StudyRoom.EditText"
+                android:id="@+id/title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="90"
+                android:background="@android:color/transparent"
+                android:hint="@string/title"
+                android:singleLine="false" />
+
+            <TextView
+                android:id="@+id/tvTitleCharCount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:layout_gravity="center"
+                android:text="140"
+                android:textColor="@color/studyroom_purple" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/llPostQuestionDescriptionBackground"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/activity_content_bottom_padding"
+        android:layout_weight="50"
+        android:gravity="center_horizontal" >
+
+        <ImageView
+            android:id="@+id/post_question_description_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edit_text_background" />
+
+        <EditText
+            style="@style/StudyRoom.EditText"
+            android:id="@+id/question_description_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:gravity="top"
+            android:hint="@string/question"
+            android:padding="@dimen/activity_content_left_padding" />
+    </RelativeLayout>
+
+    <Button
+        style="@style/StudyRoom.PurpleButton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:onClick="sendMessage"
+        android:text="@string/post" />
+
+</LinearLayout>

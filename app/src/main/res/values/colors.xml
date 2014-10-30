@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="actionbar_text">#ffffff</color>
+    <color name="studyroom_purple">#807FFF</color>
+    <color name="studyroom_dark_purple">#4241C1</color>
+    <color name="studyroom_dark_light_purple">#ff6563c8</color>
+    <color name="answer_content_background">#ffffff</color>
+    <color name="answer_background">#d3d3d3</color>
+    <color name="eighty_p_grey">#333333</color>
+    <color name="light_grey">#7e7e7e</color>
+    <color name="dark_light_grey">#ff626262</color>
+    <color name="lightest_grey">#ffe6e6e6</color>
+    <color name="enroll_bar_background_grey">#d3d3d3</color>
+    <color name="drawer_background_color">#e4e4e4</color>
+    <color name="drawer_divider_color">#7e7e7e</color>
+    <color name="drawer_text_color">#333333</color>
+    <color name="studyroom.purplespinner_color">#807fff</color>
+
+</resources>

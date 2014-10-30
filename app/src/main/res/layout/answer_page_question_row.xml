@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="100" >
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="5" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="75"
+        android:background="@drawable/answer_page_content_background"
+        android:paddingBottom="@dimen/activity_content_bottom_padding" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_content_left_padding"
+            android:layout_marginRight="@dimen/activity_content_right_padding"
+            android:orientation="vertical" >
+
+          <RelativeLayout
+                android:id="@+id/questionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true" >
+
+                <TextView
+                    android:id="@+id/user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:maxEms="9"
+                    android:singleLine="false"
+                    android:text="Loading..."
+                    android:textSize="20sp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tvQuestionFeedRowDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/user"
+                    android:layout_alignParentLeft="true"
+                    android:singleLine="true"
+                    android:text="22:10 Dec. 19th 2013"
+                    android:textColor="@color/light_grey"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+                <Button
+                    android:id="@+id/bAnswerPageQuestionRowDetails"
+                    style="@style/StudyRoom.DetailsButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleY="0.75"
+                    android:layout_alignBottom="@id/tvQuestionFeedRowDate"
+                    android:scaleX="0.25"
+                    android:layout_marginRight="-20dp"
+                    android:layout_alignTop="@id/user"
+                    android:onClick="detailsOnClick" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvAnswerContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/questionHeader"
+                android:paddingTop="@dimen/profileStatBoxVerticalSeparator"
+                android:text="This would be the content of a question to expand on any topics not covered in the Title."
+                android:textColor="@color/eighty_p_grey"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/bAnswerPageQuestionRowComments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvAnswerContent"
+                android:background="@android:color/transparent"
+                android:text="0 Comments"
+                android:onClick="showCommentsOnClick"
+                android:textColor="@color/light_grey"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="15" >
+
+        <RelativeLayout
+            android:id="@+id/rlQuestionFeedRowPoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="top"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/tvQuestionFeedRowPointsBackground"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/question_points_background" />
+
+            <TextView
+                android:id="@+id/tvQuestionFeedRowPointsValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" >
+            </TextView>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/bAnswerPageQuestionRowVoteUpButton"
+            style="@style/StudyRoom.VoteUpButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/rlQuestionFeedRowPoints"
+            android:layout_alignLeft="@id/rlQuestionFeedRowPoints"
+            android:layout_alignRight="@id/rlQuestionFeedRowPoints"
+            android:layout_centerInParent="true"
+            android:onClick="VoteUpOnClick"
+            android:scaleY="0.75" />
+
+        <Button
+            android:id="@+id/bAnswerPageQuestionRowVoteDownButton"
+            style="@style/StudyRoom.VoteDownButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/rlQuestionFeedRowPoints"
+            android:layout_alignRight="@id/rlQuestionFeedRowPoints"
+            android:layout_below="@id/rlQuestionFeedRowPoints"
+            android:layout_centerInParent="true"
+            android:onClick="VoteDownOnClick"
+            android:scaleY="0.75" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="5" />
+
+</LinearLayout>

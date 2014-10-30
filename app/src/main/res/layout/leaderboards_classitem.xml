@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"
+    android:paddingRight="?android:attr/expandableListPreferredItemPaddingLeft" 
+    >
+
+    <TextView
+        android:id="@+id/lblListItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:textSize="17sp" />
+
+    <RelativeLayout
+        android:id="@+id/rlQuestionFeedRowPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/tvQuestionFeedRowPointsBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/question_points_background"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:maxEms="9"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="0"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:singleLine="true"
+            android:textSize="17sp" >
+        </TextView>
+    </RelativeLayout>
+
+</RelativeLayout>
